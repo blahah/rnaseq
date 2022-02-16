@@ -18,7 +18,7 @@ process SAMPLESHEET_CHECK {
     echo the path is \$PATH
     echo wd is `pwd`
     ls -alh /bin /root
-    find / -type d -name 'awesome-bio' 2>/dev/null
+    find / -type f -name 'check_samplesheet.py' 2>/dev/null
     $NXF_HOME/assets/awesome-bio/rnaseq/bin/check_samplesheet.py \\
         $samplesheet \\
         samplesheet.valid.csv
