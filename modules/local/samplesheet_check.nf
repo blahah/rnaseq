@@ -17,7 +17,7 @@ process SAMPLESHEET_CHECK {
     """
     echo the path is \$PATH
     echo wd is `pwd`
-    ls -alh /bin /root
+    ls -alh /
     find / -type f -name 'check_samplesheet.py' 2>/dev/null
     $NXF_HOME/assets/awesome-bio/rnaseq/bin/check_samplesheet.py \\
         $samplesheet \\
