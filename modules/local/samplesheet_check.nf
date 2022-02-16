@@ -15,10 +15,7 @@ process SAMPLESHEET_CHECK {
 
     script: // This script is bundled with the pipeline, in nf-core/rnaseq/bin/
     """
-    echo the path is \$PATH
-    echo wd is `pwd`
-    sleep 50000
-    $NXF_HOME/assets/awesome-bio/rnaseq/bin/check_samplesheet.py \\
+    check_samplesheet.py \\
         $samplesheet \\
         samplesheet.valid.csv
 
