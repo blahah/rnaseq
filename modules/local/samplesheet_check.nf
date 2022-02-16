@@ -17,9 +17,7 @@ process SAMPLESHEET_CHECK {
     """
     echo the path is \$PATH
     echo wd is `pwd`
-    ls ../../..
-    ls -alh /workspace
-    nextflow info
+    ls -alh /
     which gtf2bed
     $NXF_HOME/assets/awesome-bio/rnaseq/bin/check_samplesheet.py \\
         $samplesheet \\
