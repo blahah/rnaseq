@@ -17,7 +17,7 @@ process SAMPLESHEET_CHECK {
     """
     echo the path is \$PATH
     echo wd is `pwd`
-    ls -alh /root/.nextflow/assets/blahah/rnaseq
+    ls -alh /root/.nextflow/
     $NXF_HOME/assets/awesome-bio/rnaseq/bin/check_samplesheet.py \\
         $samplesheet \\
         samplesheet.valid.csv
