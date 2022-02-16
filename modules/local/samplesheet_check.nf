@@ -16,8 +16,8 @@ process SAMPLESHEET_CHECK {
     script: // This script is bundled with the pipeline, in nf-core/rnaseq/bin/
     """
     echo the path is \$PATH
-    echo ls \$NXF_HOME/*
-    \$NXF_HOME/bin/check_samplesheet.py \\
+    echo ls $NXF_HOME/*
+    $NXF_HOME/bin/check_samplesheet.py \\
         $samplesheet \\
         samplesheet.valid.csv
 
